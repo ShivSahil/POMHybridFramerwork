@@ -14,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -150,20 +151,17 @@ public class BaseClass {
 	}
 
 	
-	public void staticDropDown(String key, String selectOption)  // REUSEABLE STATIC DROPDOWN METHOD
+	public void staticDropDown(By byEle,  String selectOption, String locatorName)  // REUSEABLE STATIC DROPDOWN METHOD
 	{
 		
 		
-		/*
-		 * loc= new subClass();
-		 * 
-		 * Select s = new Select(driver.findElement(loc.locator(key, "staticDropDown",
-		 * selectOption))); loc.checkDropDown(s, selectOption, key); // I can't place
-		 * this checks, in any other method. so it's stand alone
-		 * s.selectByVisibleText(selectOption);
-		 * 
-		 * loc.passMsg(key, "staticDropDown", selectOption, null, 0);
-		 */
+			
+		  loc= new subClass();
+		 
+		 Select s = new Select(loc.locator(byEle,locatorName, "staticDropDown", selectOption, null, 0));
+		 s.selectByVisibleText(selectOption);
+		 loc.passMsg(locatorName, "staticDropDown", selectOption, null, 0);
+		 
 		
 	}
 	

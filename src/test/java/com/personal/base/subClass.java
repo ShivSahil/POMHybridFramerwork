@@ -26,10 +26,17 @@ class subClass extends BaseClass{ // keep it default
 			
 		
 			
-			if(nameOfCondition==null) {
-				
-			// here it is checking if locator present on page or not, when no condition is applied
-			element=driver.findElement(byEle);
+			if(nameOfCondition==null) {  // if action is without the explicit wait
+	
+			element=driver.findElement(byEle); // here it is checking if locator present on page or not, when no condition is applied
+			
+			
+					if (action.contains("staticDropDown"))  // in case of static drop down we need to check the presence of option in drop down too
+					{
+						checkDropDown(null, action, nameOfCondition);
+					}
+			
+			
 			return element;
 			
 			}
@@ -156,15 +163,17 @@ class subClass extends BaseClass{ // keep it default
 			
 			case "type":
 			{
-				logger.debug("locator(" +locatorName+ ") filled with value '"+ data+"' successfully");
-				test.log(Status.INFO, "locator(" +locatorName+ ") filled with value '"+ data+"' successfully");
+				
+				logger.debug(nameOfCondition+" timeout for locator(" +locatorName+ ") set to "+ waitPeriod+" seconds. locator(" +locatorName+ ") filled with value '"+ data+"' successfully");
+				test.log(Status.INFO, nameOfCondition +" timeout for locator(" +locatorName+ ") set to "+ waitPeriod+" seconds. locator(" +locatorName+ ") filled with value '"+ data+"' successfully");
+				
 				 break;
 			}
 			
 			case "alert":
 			{
-				logger.debug(" Action("+ data +") successfully taken on Alert, present on page");
-				test.log(Status.INFO, " Action("+ data +") successfully taken on alert, present on page ");
+				logger.debug(nameOfCondition+" timeout for Alert set to "+ waitPeriod+" seconds. Action("+ data +") successfully taken on Alert, present on page");
+				test.log(Status.INFO, nameOfCondition+" timeout for Alert set to "+ waitPeriod+" seconds. Action("+ data +") successfully taken on alert, present on page ");
 				
 				 break;
 			}
@@ -173,8 +182,8 @@ class subClass extends BaseClass{ // keep it default
 			{
 				// **** DON'T WRITE driver.getTitle(), in case there is a alert box. you will get error on driver.getTitle()
 				
-				logger.debug("option(" +data+ ") selected successfully on dropdown("+locatorName+")");
-				test.log(Status.INFO, "option(" +data+ ") selected successfully on dropdown("+locatorName+")");
+				logger.debug(nameOfCondition+" timeout for locator(" +locatorName+ ") set to "+ waitPeriod+" seconds. option(" +data+ ") selected successfully on dropdown("+locatorName+")");
+				test.log(Status.INFO,nameOfCondition+" timeout for locator(" +locatorName+ ") set to "+ waitPeriod+" seconds. option(" +data+ ") selected successfully on dropdown("+locatorName+")");
 				 break;
 			}
 	
@@ -271,9 +280,16 @@ class subClass extends BaseClass{ // keep it default
 	
 	
 	// i have to keep it separate , cause i can't place it anywhere else
+	// here we check for the presence of the element in the static drop down
+	// locator method is used to check the presence of the static dropd down element only
 
-	void checkDropDown(Select s, String selectOption, String key) {
+	
+	
+	
+	 
+	void checkDropDown(By byEle, String locatorName, String selectOption) {
 		
+		 Select s = new Select(driver.findElement(byEle));
 		List<WebElement> op  = s.getOptions();
 		List<String> newList = new ArrayList<String>();
 		
@@ -285,8 +301,8 @@ class subClass extends BaseClass{ // keep it default
 		if( ! (newList.contains(selectOption)))
 				{
 					
-			logger.error("option(" +selectOption+ ") is NOT selected on dropdown("+key+"). Either dropdown("+key+") or option(" +selectOption+ ") is NOT present on page.");
-			Assert.fail("option(" +selectOption+ ") is NOT selected on dropdown("+key+"). Either dropdown("+key+") or option(" +selectOption+ ") is NOT present on page.");
+			logger.error("option(" +selectOption+ ") is NOT selected on dropdown("+locatorName+"). Either dropdown("+locatorName+") or option(" +selectOption+ ") is NOT present on page.");
+			Assert.fail("option(" +selectOption+ ") is NOT selected on dropdown("+locatorName+"). Either dropdown("+locatorName+") or option(" +selectOption+ ") is NOT present on page.");
 				}
 		
 	}

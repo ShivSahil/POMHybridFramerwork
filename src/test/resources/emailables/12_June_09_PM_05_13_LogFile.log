@@ -1,0 +1,17 @@
+2021-Jun-12 21:05:34 PM [main] INFO  com.personal.base.BaseClass - CHROME browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+2021-Jun-12 21:05:34 PM [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+2021-Jun-12 21:05:35 PM [main] DEBUG com.personal.base.BaseClass - window maximized
+2021-Jun-12 21:05:35 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF loginAsmanagerTest HAS BEGUN >> 
+2021-Jun-12 21:05:35 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+2021-Jun-12 21:05:35 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+2021-Jun-12 21:05:36 PM [main] ERROR com.personal.base.BaseClass - loginAsmanagerTest HAS FAILED 
+2021-Jun-12 21:05:36 PM [main] ERROR com.personal.base.BaseClass - loginAsmanagerTest HAS FAILED 
+2021-Jun-12 21:05:37 PM [main] INFO  com.personal.base.BaseClass - CHROME BROWSER CLOSED
+2021-Jun-12 21:05:37 PM [main] DEBUG com.personal.base.BaseClass -  
+ 
+ ------------------------------------------------------------------------------------------------- 
+ 
+

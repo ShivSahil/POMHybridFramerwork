@@ -12,7 +12,7 @@ public class HomePage extends Page {
 
 	
 
-	public CustomerPage enterCustomerLoginPage() {
+	public CustomerPage enterCustomerLoginPage() {   // different classes are given to establish fluid syntax
 		
 		click(customerLoginbtnLocator, "customerLoginbtnLocator");
 		return new CustomerPage();

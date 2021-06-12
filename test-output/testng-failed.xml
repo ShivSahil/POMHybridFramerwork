@@ -10,7 +10,7 @@
         <methods>
           <include name="loginAsmanagerTest"/>
           <include name="tearDown"/>
-          <include name="addMultipleCustomerTest" invocation-numbers="0 1 2"/>
+          <include name="addMultipleCustomerTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.personal.testcases.AddCustomerTest -->

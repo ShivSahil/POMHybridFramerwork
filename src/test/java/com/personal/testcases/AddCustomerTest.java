@@ -19,7 +19,7 @@ public class AddCustomerTest extends BaseClass {
 		
 		HomePage homePage = new HomePage();
 		homePage.enterBankManagerLoginPage()
-		.enterAddCustomersTab();          
+		.enterAddCustomersTab();           // this is called FLUID SYNTAX
 
 		
 		//isElementPresent("AddCustomerButton_xpath", "hardAssert");  HOW TO PLACE ASSERT in between????

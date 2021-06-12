@@ -1,0 +1,51 @@
+2021-Jun-12 22:55:30 PM [main] INFO  com.personal.base.BaseClass - CHROME browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+2021-Jun-12 22:55:30 PM [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+2021-Jun-12 22:55:35 PM [main] DEBUG com.personal.base.BaseClass - window maximized
+2021-Jun-12 22:55:35 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF loginAsmanagerTest HAS BEGUN >> 
+2021-Jun-12 22:55:35 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+2021-Jun-12 22:55:35 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+2021-Jun-12 22:55:35 PM [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(bankManagerLoginbtnLocator) set to 5 seconds. locator(bankManagerLoginbtnLocator) clicked successfully
+2021-Jun-12 22:55:36 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerTabLocator) clicked successfully
+2021-Jun-12 22:55:36 PM [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+2021-Jun-12 22:55:37 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-12 22:55:37 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-12 22:55:37 PM [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(firstNameLocator) set to 4 seconds. locator(firstNameLocator) filled with value 'Shiv' successfully
+2021-Jun-12 22:55:37 PM [main] DEBUG com.personal.base.BaseClass - locator(lastNameLocator) filled with value 'Sahil' successfully
+2021-Jun-12 22:55:37 PM [main] DEBUG com.personal.base.BaseClass - locator(pincodeLocator) filled with value '160014' successfully
+2021-Jun-12 22:55:37 PM [main] DEBUG com.personal.base.BaseClass - locator(addCustomerBtnLocator) clicked successfully
+2021-Jun-12 22:55:38 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-12 22:55:38 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-12 22:55:38 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-12 22:55:38 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-12 22:55:38 PM [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(firstNameLocator) set to 4 seconds. locator(firstNameLocator) filled with value 'Sahil' successfully
+2021-Jun-12 22:55:38 PM [main] DEBUG com.personal.base.BaseClass - locator(lastNameLocator) filled with value 'Guleri' successfully
+2021-Jun-12 22:55:38 PM [main] DEBUG com.personal.base.BaseClass - locator(pincodeLocator) filled with value '3967' successfully
+2021-Jun-12 22:55:38 PM [main] DEBUG com.personal.base.BaseClass - locator(addCustomerBtnLocator) clicked successfully
+2021-Jun-12 22:55:38 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-12 22:55:38 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-12 22:55:38 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-12 22:55:38 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-12 22:55:38 PM [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(firstNameLocator) set to 4 seconds. locator(firstNameLocator) filled with value 'No' successfully
+2021-Jun-12 22:55:38 PM [main] DEBUG com.personal.base.BaseClass - locator(lastNameLocator) filled with value 'Cust' successfully
+2021-Jun-12 22:55:38 PM [main] DEBUG com.personal.base.BaseClass - locator(pincodeLocator) filled with value '1332' successfully
+2021-Jun-12 22:55:38 PM [main] DEBUG com.personal.base.BaseClass - locator(addCustomerBtnLocator) clicked successfully
+2021-Jun-12 22:55:38 PM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-12 22:55:38 PM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-12 22:55:39 PM [main] INFO  com.personal.base.BaseClass - CHROME BROWSER CLOSED
+2021-Jun-12 22:55:39 PM [main] DEBUG com.personal.base.BaseClass -  
+ 
+ ------------------------------------------------------------------------------------------------- 
+ 
+
