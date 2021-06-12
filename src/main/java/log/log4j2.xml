@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+	
+	<Properties>
+		<Property name="basePath">./src/test/resources/emailables</Property>
+		<property name="filePattern">${date:dd_MMMM_hh_a_mm_ss}</property>
+	</Properties>
+
+
+	<Appenders>
+
+		<File name="File" fileName="${basePath}/${filePattern}_LogFile.log" append="false">
+            <PatternLayout
+pattern="%d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} - %msg%n" />
+        </File>
+
+
+
+
+
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+
+
+
+	<Loggers>
+
+		
+		<Root level="trace" additivity="true">
+			<AppenderRef ref="File" />
+			<AppenderRef ref="console" />
+		</Root>
+
+	</Loggers>
+</Configuration>

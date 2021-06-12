@@ -1,0 +1,38 @@
+2021-Jun-12 19:47:05 PM [main] INFO  com.personal.base.BaseClass - CHROME browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+2021-Jun-12 19:47:05 PM [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+2021-Jun-12 19:47:06 PM [main] DEBUG com.personal.base.BaseClass - window maximized
+2021-Jun-12 19:47:06 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF loginAsmanagerTest HAS BEGUN >> 
+2021-Jun-12 19:47:06 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+2021-Jun-12 19:47:06 PM [main] INFO  com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is correct title
+2021-Jun-12 19:47:06 PM [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(bankManagerLoginbtnLocator) set to 5 seconds. locator(bankManagerLoginbtnLocator) clicked successfully
+2021-Jun-12 19:47:06 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerTabLocator) clicked successfully
+2021-Jun-12 19:47:06 PM [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+2021-Jun-12 19:47:07 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-12 19:47:07 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-12 19:47:45 PM [main] DEBUG com.personal.base.BaseClass - locator(firstNameLocator) filled with value 'Shiv' successfully
+2021-Jun-12 19:48:49 PM [main] DEBUG com.personal.base.BaseClass - locator(lastNameLocator) clicked successfully
+2021-Jun-12 19:50:39 PM [main] ERROR com.personal.base.BaseClass - locator(pincodeLocator)  [ By.cssSelector: input[placeholder='Post Code']] ]can't filled with value 'null' as locator is NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\NISHAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55644}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ec07276224d56d8ebcf36a8c5aca7013
+*** Element info: {Using=css selector, value=input[placeholder='Post Code']]}
+2021-Jun-12 19:50:56 PM [main] ERROR com.personal.base.BaseClass - addMultipleCustomerTest HAS FAILED 
+2021-Jun-12 19:50:56 PM [main] DEBUG com.personal.base.BaseClass - Screenshot(12_June_07_PM_50_56_201ADDMULTIPLECUSTOMERTEST.png) of addMultipleCustomerTest method taken successfully
+2021-Jun-12 19:50:56 PM [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+2021-Jun-12 19:50:56 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-12 19:50:56 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers

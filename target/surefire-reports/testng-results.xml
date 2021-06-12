@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="6" total="13" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Customer Suite" duration-ms="10275" started-at="2021-06-11T22:26:12 IST" finished-at="2021-06-11T22:26:23 IST">
+    <groups>
+      <group name="CustomerLoginMethodPrerequisites">
+        <method signature="OpenAccountTest.openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@3e84448c]" name="openAccountMethod" class="com.personal.testcases.OpenAccountTest"/>
+      </group> <!-- CustomerLoginMethodPrerequisites -->
+      <group name="openAccountMethodPrerequisites">
+        <method signature="AddCustomerTest.addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@4d5b6aac]" name="addMultipleCustomerTest" class="com.personal.testcases.AddCustomerTest"/>
+      </group> <!-- openAccountMethodPrerequisites -->
+    </groups>
+    <test name="Test run 1" duration-ms="10275" started-at="2021-06-11T22:26:12 IST" finished-at="2021-06-11T22:26:23 IST">
+      <class name="com.personal.testcases.OpenAccountTest">
+        <test-method name="openAccountMethod" signature="openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@3e84448c]" depends-on-groups="openAccountMethodPrerequisites" status="PASS" duration-ms="1049" finished-at="2021-06-11T22:26:20 IST" started-at="2021-06-11T22:26:19 IST" data-provider="excelData" description="BANK MANAGER LOGIN &gt; OPEN CUSTOMER TAB - opening multiple customers account">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sahil Guleri]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pound]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountMethod -->
+        <test-method name="openAccountMethod" signature="openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@3e84448c]" depends-on-groups="openAccountMethodPrerequisites" status="PASS" duration-ms="591" finished-at="2021-06-11T22:26:20 IST" started-at="2021-06-11T22:26:20 IST" data-provider="excelData" description="BANK MANAGER LOGIN &gt; OPEN CUSTOMER TAB - opening multiple customers account">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shiv Sahil]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rupee]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountMethod -->
+      </class> <!-- com.personal.testcases.OpenAccountTest -->
+      <class name="com.personal.base.BaseClass">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.personal.base.BaseClass@10d307f1]" name="setUp" is-config="true" duration-ms="3058" started-at="2021-06-11T22:26:12 IST" finished-at="2021-06-11T22:26:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.personal.base.BaseClass@10d307f1]" name="tearDown" is-config="true" duration-ms="736" started-at="2021-06-11T22:26:22 IST" finished-at="2021-06-11T22:26:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.personal.base.BaseClass -->
+      <class name="com.personal.testcases.CustomerLoginTest">
+        <test-method status="PASS" signature="customerLoginMethod()[pri:0, instance:com.personal.testcases.CustomerLoginTest@4a7f959b]" name="customerLoginMethod" duration-ms="1562" depends-on-groups="CustomerLoginMethodPrerequisites" started-at="2021-06-11T22:26:20 IST" description="CUSTOMER LOGIN - login as customer" finished-at="2021-06-11T22:26:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerLoginMethod -->
+      </class> <!-- com.personal.testcases.CustomerLoginTest -->
+      <class name="com.personal.testcases.AddCustomerTest">
+        <test-method status="PASS" signature="loginAsmanagerTest()[pri:0, instance:com.personal.testcases.AddCustomerTest@4d5b6aac]" name="loginAsmanagerTest" duration-ms="507" started-at="2021-06-11T22:26:15 IST" description="BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen" finished-at="2021-06-11T22:26:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsmanagerTest -->
+        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@4d5b6aac]" status="PASS" duration-ms="621" finished-at="2021-06-11T22:26:18 IST" started-at="2021-06-11T22:26:17 IST" depends-on-methods="com.personal.testcases.AddCustomerTest.loginAsmanagerTest" data-provider="excelData" description="BANK MANAGER LOGIN &gt; ADD CUSTOMER TAB - adding multiple customers">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shiv]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sahil]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[160014]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMultipleCustomerTest -->
+        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@4d5b6aac]" status="PASS" duration-ms="432" finished-at="2021-06-11T22:26:18 IST" started-at="2021-06-11T22:26:18 IST" depends-on-methods="com.personal.testcases.AddCustomerTest.loginAsmanagerTest" data-provider="excelData" description="BANK MANAGER LOGIN &gt; ADD CUSTOMER TAB - adding multiple customers">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sahil]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Guleri]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3967]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMultipleCustomerTest -->
+        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@4d5b6aac]" status="PASS" duration-ms="565" finished-at="2021-06-11T22:26:19 IST" started-at="2021-06-11T22:26:18 IST" depends-on-methods="com.personal.testcases.AddCustomerTest.loginAsmanagerTest" data-provider="excelData" description="BANK MANAGER LOGIN &gt; ADD CUSTOMER TAB - adding multiple customers">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cust]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1332]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMultipleCustomerTest -->
+      </class> <!-- com.personal.testcases.AddCustomerTest -->
+    </test> <!-- Test run 1 -->
+  </suite> <!-- Customer Suite -->
+</testng-results>
