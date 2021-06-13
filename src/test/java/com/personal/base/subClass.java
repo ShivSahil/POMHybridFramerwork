@@ -33,7 +33,7 @@ class subClass extends BaseClass{ // keep it default
 			
 					if (action.contains("staticDropDown"))  // in case of static drop down we need to check the presence of option in drop down too
 					{
-						checkDropDown(null, action, nameOfCondition);
+						checkDropDown(byEle, locatorName, data);
 					}
 			
 			
@@ -264,10 +264,10 @@ class subClass extends BaseClass{ // keep it default
 		else if(action.equals("staticDropDown") && exception.contains("NoSuchElementException"))
 		{
 
-			logger.error("option(" +data+ ") is NOT selected on dropdown("+locatorName+")  [ "+byEle+" ]. Either dropdown("+locatorName+") or option(" +data+ ") is NOT present on page."
+			logger.error("option(" +data+ ") is NOT selected on dropdown("+locatorName+")  [ "+byEle+" ]. Either dropdown("+locatorName+") is NOT present on page."
 					+ "\n \n Error msg is :-   "+ exception);
 			
-			Assert.fail("option(" +data+ ") is NOT selected on dropdown("+locatorName+") [ "+byEle+" ]. Either dropdown("+locatorName+") or option(" +data+ ") is NOT present on page."
+			Assert.fail("option(" +data+ ") is NOT selected on dropdown("+locatorName+") [ "+byEle+" ]. Either dropdown("+locatorName+") is NOT present on page."
 					+ "\n \n Error msg is :-   "+ exception);
 		
 		}
@@ -289,6 +289,8 @@ class subClass extends BaseClass{ // keep it default
 	 
 	void checkDropDown(By byEle, String locatorName, String selectOption) {
 		
+		
+		
 		 Select s = new Select(driver.findElement(byEle));
 		List<WebElement> op  = s.getOptions();
 		List<String> newList = new ArrayList<String>();
@@ -297,12 +299,13 @@ class subClass extends BaseClass{ // keep it default
 			 newList.add(op.get(i).getText());
 	      }
 		
+		 
 		
 		if( ! (newList.contains(selectOption)))
 				{
 					
-			logger.error("option(" +selectOption+ ") is NOT selected on dropdown("+locatorName+"). Either dropdown("+locatorName+") or option(" +selectOption+ ") is NOT present on page.");
-			Assert.fail("option(" +selectOption+ ") is NOT selected on dropdown("+locatorName+"). Either dropdown("+locatorName+") or option(" +selectOption+ ") is NOT present on page.");
+			logger.error("option(" +selectOption+ ") is NOT selected on dropdown("+locatorName+"). Option(" +selectOption+ ") is NOT present in dropdown.");
+			Assert.fail("option(" +selectOption+ ") is NOT selected on dropdown("+locatorName+"). Option(" +selectOption+ ") is NOT present in dropdown.");
 				}
 		
 	}

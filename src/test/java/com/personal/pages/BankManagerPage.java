@@ -29,7 +29,7 @@ public class BankManagerPage extends Page{
 		setPincode(pincode);
 		clickAddCustomerBtn();
 		
-		alert("accept"); 
+		alert("accept", 4); 
 		return new BankManagerPage();
 	}
 	

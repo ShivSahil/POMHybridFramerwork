@@ -235,6 +235,7 @@ public class BaseClass {
 		
 		
 		 loc= new subClass(); 
+		 loc.locator(byEle,locatorName, "type", data, nameOfCondition, waitPeriod).clear();
 		 loc.locator(byEle,locatorName, "type", data, nameOfCondition, waitPeriod).sendKeys(data);
 		 loc.passMsg(locatorName, "type", data, nameOfCondition, waitPeriod);
 		
@@ -285,7 +286,7 @@ public class BaseClass {
 				}
 		}
 		
-		catch (NoAlertPresentException e) {     
+		catch (Exception e) {     
 			
 			logger.error(" Action("+ action +") can't be successfully taken on Alert, as Alert is either NOT present on page or ("+waitPeriod+" second) waitperiod of conditon(alertIsPresent) timed out "
 					+ "\n \n \n Error msg is :-   "+ e.getMessage());

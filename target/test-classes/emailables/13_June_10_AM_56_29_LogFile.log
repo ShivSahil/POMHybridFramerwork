@@ -1,0 +1,93 @@
+2021-Jun-13 10:56:34 AM [main] INFO  com.personal.base.BaseClass - FIREFOX browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+2021-Jun-13 10:56:34 AM [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+2021-Jun-13 10:56:34 AM [main] DEBUG com.personal.base.BaseClass - window maximized
+2021-Jun-13 10:56:34 AM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF loginAsmanagerTest HAS BEGUN >> 
+2021-Jun-13 10:56:34 AM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+2021-Jun-13 10:56:34 AM [main] ERROR com.personal.base.BaseClass - VERIFY :- 'Protractor practice website - Banking App' is INCORRECT TITLE. Actual Title is :- 
+2021-Jun-13 10:56:35 AM [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(bankManagerLoginbtnLocator) set to 5 seconds. locator(bankManagerLoginbtnLocator) clicked successfully
+2021-Jun-13 10:56:35 AM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerTabLocator) clicked successfully
+2021-Jun-13 10:56:35 AM [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+2021-Jun-13 10:56:36 AM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-13 10:56:36 AM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-13 10:56:36 AM [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(firstNameLocator) set to 4 seconds. locator(firstNameLocator) filled with value 'Shiv' successfully
+2021-Jun-13 10:56:36 AM [main] DEBUG com.personal.base.BaseClass - locator(lastNameLocator) filled with value 'Sahil' successfully
+2021-Jun-13 10:56:36 AM [main] DEBUG com.personal.base.BaseClass - locator(pincodeLocator) filled with value '160014' successfully
+2021-Jun-13 10:56:36 AM [main] DEBUG com.personal.base.BaseClass - locator(addCustomerBtnLocator) clicked successfully
+2021-Jun-13 10:56:36 AM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-13 10:56:36 AM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-13 10:56:36 AM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-13 10:56:36 AM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-13 10:56:36 AM [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(firstNameLocator) set to 4 seconds. locator(firstNameLocator) filled with value 'Sahil' successfully
+2021-Jun-13 10:56:37 AM [main] DEBUG com.personal.base.BaseClass - locator(lastNameLocator) filled with value 'Guleri' successfully
+2021-Jun-13 10:56:37 AM [main] DEBUG com.personal.base.BaseClass - locator(pincodeLocator) filled with value '3967' successfully
+2021-Jun-13 10:56:37 AM [main] DEBUG com.personal.base.BaseClass - locator(addCustomerBtnLocator) clicked successfully
+2021-Jun-13 10:56:37 AM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-13 10:56:37 AM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-13 10:56:37 AM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-13 10:56:37 AM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-13 10:56:37 AM [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(firstNameLocator) set to 4 seconds. locator(firstNameLocator) filled with value 'No' successfully
+2021-Jun-13 10:56:37 AM [main] DEBUG com.personal.base.BaseClass - locator(lastNameLocator) filled with value 'Cust' successfully
+2021-Jun-13 10:56:37 AM [main] DEBUG com.personal.base.BaseClass - locator(pincodeLocator) filled with value '1332' successfully
+2021-Jun-13 10:56:37 AM [main] DEBUG com.personal.base.BaseClass - locator(addCustomerBtnLocator) clicked successfully
+2021-Jun-13 10:56:37 AM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-13 10:56:37 AM [main] INFO  com.personal.base.BaseClass - addMultipleCustomerTest HAS PASSED
+2021-Jun-13 10:56:37 AM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+2021-Jun-13 10:56:37 AM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+2021-Jun-13 10:56:37 AM [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(openAccountTabLocator) set to 5 seconds. locator(openAccountTabLocator) clicked successfully
+2021-Jun-13 10:56:37 AM [main] DEBUG com.personal.base.BaseClass - option(Sahil Guleri) selected successfully on dropdown(customerDropDownLocator)
+2021-Jun-13 10:56:38 AM [main] DEBUG com.personal.base.BaseClass - option(Pound) selected successfully on dropdown(currencyLocator)
+2021-Jun-13 10:56:38 AM [main] DEBUG com.personal.base.BaseClass - locator(submitLocator) clicked successfully
+2021-Jun-13 10:56:38 AM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-13 10:56:38 AM [main] INFO  com.personal.base.BaseClass - openAccountMethod HAS PASSED
+2021-Jun-13 10:56:38 AM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+2021-Jun-13 10:56:38 AM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+2021-Jun-13 10:56:38 AM [main] DEBUG com.personal.base.BaseClass - visibilityOfElementLocated timeout for locator(openAccountTabLocator) set to 5 seconds. locator(openAccountTabLocator) clicked successfully
+2021-Jun-13 10:56:39 AM [main] DEBUG com.personal.base.BaseClass - option(Shiv Sahil) selected successfully on dropdown(customerDropDownLocator)
+2021-Jun-13 10:56:39 AM [main] DEBUG com.personal.base.BaseClass - option(Rupee) selected successfully on dropdown(currencyLocator)
+2021-Jun-13 10:56:39 AM [main] DEBUG com.personal.base.BaseClass - locator(submitLocator) clicked successfully
+2021-Jun-13 10:56:39 AM [main] DEBUG com.personal.base.BaseClass -  Action(accept) successfully taken on Alert, present on page
+2021-Jun-13 10:56:39 AM [main] INFO  com.personal.base.BaseClass - openAccountMethod HAS PASSED
+2021-Jun-13 10:56:39 AM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF customerLoginMethod HAS BEGUN >> 
+2021-Jun-13 10:56:39 AM [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
+2021-Jun-13 10:56:39 AM [main] DEBUG com.personal.base.BaseClass - locator(homebtnLocator) clicked successfully
+2021-Jun-13 10:56:39 AM [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(customerLoginbtnLocator) set to 5 seconds. locator(customerLoginbtnLocator) clicked successfully
+2021-Jun-13 10:56:43 AM [main] ERROR com.personal.base.BaseClass - option(Shiv Sahil) is NOT selected on dropdown(selectCustomerDropdownLocator)  [ By.name: userSelect11111111111111 ]. Either dropdown(selectCustomerDropdownLocator) or option(Shiv Sahil) is NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name='userSelect11111111111111']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 3820, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 562dd3c7-14f9-4d95-86a2-5a5343140c05
+*** Element info: {Using=name, value=userSelect11111111111111}
+2021-Jun-13 10:56:43 AM [main] ERROR com.personal.base.BaseClass - customerLoginMethod HAS FAILED 
+2021-Jun-13 10:56:43 AM [main] DEBUG com.personal.base.BaseClass - Screenshot(13_June_10_AM_56_43_863CUSTOMERLOGINMETHOD.png) of customerLoginMethod method taken successfully
+2021-Jun-13 10:56:43 AM [main] DEBUG com.personal.base.BaseClass - Screenshot of customerLoginMethod method successfully attached to report 
+2021-Jun-13 10:56:44 AM [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+2021-Jun-13 10:56:44 AM [main] DEBUG com.personal.base.BaseClass -  
+ 
+ ------------------------------------------------------------------------------------------------- 
+ 
+
