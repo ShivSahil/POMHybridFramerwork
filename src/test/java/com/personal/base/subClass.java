@@ -24,8 +24,6 @@ class subClass extends BaseClass{ // keep it default
 		
 		try {			
 			
-		
-			
 			if(nameOfCondition==null) {  // if action is without the explicit wait
 	
 			element=driver.findElement(byEle); // here it is checking if locator present on page or not, when no condition is applied

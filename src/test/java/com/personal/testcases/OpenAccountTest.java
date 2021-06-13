@@ -17,10 +17,6 @@ public class OpenAccountTest extends BaseClass{
 		BankManagerPage bankManagerPage= new BankManagerPage();
 		bankManagerPage.openAccount(name, currency);
 
-		//doesAlertContainsText("Account created successfully with account Number :","softAssert"); HOW TO PLACE IN BETWEEN
-	
-		
-
 	}
 	
 	

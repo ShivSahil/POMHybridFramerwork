@@ -307,16 +307,6 @@ public class BaseClass {
 
 	
 	
-	/*
-	 * code is written such that for verification screenshots not taken screenshots needs to be added then change
-	 * test.log(Status.ERROR,"VERIFY :- '"+driver.getTitle()+ "' is INCORRECT TITLE"); 
-	 * to following
-	 * Assert.fail("VERIFY :- '"+driver.getTitle()+ "' is INCORRECT TITLE"); 
-	 * 
-	 */
-	
-	
-	
 	
 	
 public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE METHOD FOR CHECKING TITLE 
@@ -366,14 +356,10 @@ public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE
 	
 }
 
-public void isElementPresent(String key, String assertType) { // REUSEABLE ELEMENT AVAILABILITY METHOD
+public void isElementPresent() { // REUSEABLE ELEMENT AVAILABILITY METHOD
 	
+	// ??????????????
 	
-	/*
-	 * loc = new subClass(); By bol=loc.locator(key, assertType.toLowerCase(),null);
-	 * 
-	 * if(bol!=null) { loc.passMsg(key, assertType.toLowerCase(), null, null, 0); }
-	 */
 			
 	}
 	 

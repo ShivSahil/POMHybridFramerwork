@@ -20,10 +20,6 @@ public class CustomerLoginTest extends BaseClass {
 		.logoutAsCustomer()
 		.loginAsCustomer("No Cust")
 		.logoutAsCustomer();
-		
-		
-		// how to place this
-		// isElementPresent("Transaction_css", "hardAssert");
 
 	}
 	

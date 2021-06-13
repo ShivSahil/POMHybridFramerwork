@@ -15,15 +15,15 @@ public class AddCustomerTest extends BaseClass {
 	@Test(description = "BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen")
 	public void loginAsmanagerTest() {
 
-		checkPageTitle("Protractor practice website - Banking App","softAssert");  
+		  
 		
 		HomePage homePage = new HomePage();
 		homePage.enterBankManagerLoginPage()
 		.enterAddCustomersTab();           // this is called FLUID SYNTAX
 
+		checkPageTitle("Protractor practice website - Banking App","softAssert");
 		
-		//isElementPresent("AddCustomerButton_xpath", "hardAssert");  HOW TO PLACE ASSERT in between????
-		 
+		
 
 	}
 	
@@ -35,8 +35,6 @@ public class AddCustomerTest extends BaseClass {
 		BankManagerPage bankManagerPage= new BankManagerPage();
 		bankManagerPage.addCustomer(firstName, lastName, pincode);
 		
-	
-		//doesAlertContainsText("Customer added successfully with customer id", "softAssert");  HOW TO PLACE ASSERT inbetween????
 		 
 		
 	}
