@@ -11,7 +11,7 @@ public class BankManagerPage extends Page{
  
 	private By addCustomerTabLocator = By.xpath("//button[@ng-click='addCust()']");
 	private By firstNameLocator = By.cssSelector("input[placeholder='First Name']");
-	private By lastNameLocator= By.cssSelector("input[placeholder='Last Name']");
+	private By lastNameLocator= By.cssSelector("input[placeholder='Last Name']111111");
 	private By pincodeLocator = By.cssSelector("input[placeholder='Post Code']");
 	private By addCustomerBtnLocator = By.xpath("//button[@type='submit']");
 	

@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Customer Suite]">
   <listeners>
     <listener class-name="com.personal.listeners.ItestLis"/>
+    <listener class-name="com.personal.listeners.AnnotationTransformer"/>
   </listeners>
   <test thread-count="5" name="Test run 1(failed)">
     <classes>
@@ -10,17 +11,10 @@
         <methods>
           <include name="loginAsmanagerTest"/>
           <include name="tearDown"/>
-          <include name="addMultipleCustomerTest"/>
+          <include name="addMultipleCustomerTest" invocation-numbers="0 0 1 1 2 2"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.personal.testcases.AddCustomerTest -->
-      <class name="com.personal.testcases.CustomerLoginTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="customerLoginMethod"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.personal.testcases.CustomerLoginTest -->
       <class name="com.personal.testcases.OpenAccountTest">
         <methods>
           <include name="tearDown"/>
@@ -28,6 +22,13 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- com.personal.testcases.OpenAccountTest -->
+      <class name="com.personal.testcases.CustomerLoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="customerLoginMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.personal.testcases.CustomerLoginTest -->
     </classes>
   </test> <!-- Test run 1(failed) -->
 </suite> <!-- Failed suite [Customer Suite] -->
