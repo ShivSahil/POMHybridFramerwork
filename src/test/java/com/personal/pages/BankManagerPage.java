@@ -27,7 +27,7 @@ public class BankManagerPage extends Page{
 		setFirstName(firstName);
 		setLastName(lastName);
 		setPincode(pincode);
-		addCustomerBtn();
+		clickAddCustomerBtn();
 		
 		alert("accept"); 
 		return new BankManagerPage();
@@ -53,7 +53,7 @@ public class BankManagerPage extends Page{
 		return new BankManagerPage();
 	}
 	
-	private BankManagerPage addCustomerBtn()
+	private BankManagerPage clickAddCustomerBtn()
 	{
 		click(addCustomerBtnLocator, "addCustomerBtnLocator");
 		return new BankManagerPage();
@@ -73,12 +73,13 @@ public class BankManagerPage extends Page{
 	
 
 	
-	public void openAccount(String name, String currency) {
+	public HomePage openAccount(String name, String currency) {   // after this we are going to home page
 		openAccountTab();
 		setName(name);
 		setcurrency(currency);
-		submitBtn();
+		clickSubmitBtn();
 		alert("accept");
+		return new HomePage();
 		
 	}
 	
@@ -101,7 +102,7 @@ public class BankManagerPage extends Page{
 		
 	}
 	
-	private BankManagerPage submitBtn()
+	private BankManagerPage clickSubmitBtn()
 	{
 		click(submitLocator, "submitLocator");
 		return new BankManagerPage();

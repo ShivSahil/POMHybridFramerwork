@@ -1,0 +1,24 @@
+2021-Jun-13 10:27:28 AM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF loginAsmanagerTest HAS BEGUN >> 
+2021-Jun-13 10:27:28 AM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+2021-Jun-13 10:27:28 AM [main] ERROR com.personal.base.BaseClass - loginAsmanagerTest HAS SKIPPED BECAUSE IT'S DEPENDENCY '[]' HAS FAILED
+2021-Jun-13 10:27:28 AM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-13 10:27:28 AM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-13 10:27:28 AM [main] ERROR com.personal.base.BaseClass - addMultipleCustomerTest HAS SKIPPED BECAUSE IT'S DEPENDENCY '[com.personal.testcases.AddCustomerTest.loginAsmanagerTest]' HAS FAILED
+2021-Jun-13 10:27:28 AM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+2021-Jun-13 10:27:28 AM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+2021-Jun-13 10:27:28 AM [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[openAccountMethodPrerequisites]' HAS FAILED
+2021-Jun-13 10:27:28 AM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF customerLoginMethod HAS BEGUN >> 
+2021-Jun-13 10:27:28 AM [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
+2021-Jun-13 10:27:28 AM [main] ERROR com.personal.base.BaseClass - customerLoginMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[CustomerLoginMethodPrerequisites]' HAS FAILED

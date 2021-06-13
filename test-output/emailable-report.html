@@ -9,15 +9,33 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Customer Suite</th></tr>
-<tr><td><a href="#t0">Test run 1</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,639</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test run 1</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num">0</td><td class="num">352</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Customer Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test run 1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.personal.testcases.AddCustomerTest</td><td><a href="#m0">addMultipleCustomerTest</a></td><td rowspan="3">1623519165437</td><td rowspan="3">434</td></tr><tr class="passedeven"><td><a href="#m1">addMultipleCustomerTest</a></td></tr><tr class="passedeven"><td><a href="#m2">addMultipleCustomerTest</a></td></tr><tr class="passedeven"><td><a href="#m3">loginAsmanagerTest</a></td><td rowspan="1">1623519163092</td><td rowspan="1">507</td></tr><tr class="passedodd"><td rowspan="2">com.personal.testcases.OpenAccountTest</td><td><a href="#m4">openAccountMethod</a></td><td rowspan="2">1623519166406</td><td rowspan="2">914</td></tr><tr class="passedodd"><td><a href="#m5">openAccountMethod</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Customer Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test run 1 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.personal.base.BaseClass</td><td><a href="#m0">setUp</a></td><td rowspan="1">1623560248291</td><td rowspan="1">10</td></tr><tr><th colspan="4">Test run 1 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.personal.base.BaseClass</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1623560248636</td><td rowspan="1">-1623560248636</td></tr><tr><th colspan="4">Test run 1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.personal.testcases.AddCustomerTest</td><td><a href="#m2">addMultipleCustomerTest</a></td><td rowspan="1">1623560248598</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">loginAsmanagerTest</a></td><td rowspan="1">1623560248334</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">com.personal.testcases.CustomerLoginTest</td><td><a href="#m4">customerLoginMethod</a></td><td rowspan="1">1623560248624</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">com.personal.testcases.OpenAccountTest</td><td><a href="#m5">openAccountMethod</a></td><td rowspan="1">1623560248612</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test run 1</h2><h3 id="m0">com.personal.testcases.AddCustomerTest#addMultipleCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Sahil</td><td>Guleri</td><td>3967</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.personal.testcases.AddCustomerTest#addMultipleCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>No</td><td>Cust</td><td>1332</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.personal.testcases.AddCustomerTest#addMultipleCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Shiv</td><td>Sahil</td><td>160014</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.personal.testcases.AddCustomerTest#loginAsmanagerTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.personal.testcases.OpenAccountTest#openAccountMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Sahil Guleri</td><td>Pound</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.personal.testcases.OpenAccountTest#openAccountMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Shiv Sahil</td><td>Rupee</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test run 1</h2><h3 id="m0">com.personal.base.BaseClass#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\Nishant Guleri\eclipse-workspace\PomHybridFramework\src\test\resources\properties\ObjectRepo.properties (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at com.personal.base.BaseClass.setUp(BaseClass.java:63)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.personal.base.BaseClass#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.personal.testcases.AddCustomerTest#addMultipleCustomerTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method AddCustomerTest.addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@3a44431a] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.personal.testcases.AddCustomerTest#loginAsmanagerTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\Nishant Guleri\eclipse-workspace\PomHybridFramework\src\test\resources\properties\ObjectRepo.properties (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at com.personal.base.BaseClass.setUp(BaseClass.java:63)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.personal.testcases.CustomerLoginTest#customerLoginMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method CustomerLoginTest.customerLoginMethod()[pri:0, instance:com.personal.testcases.CustomerLoginTest@194bcebf] depends on not successfully finished methods in group &quot;CustomerLoginMethodPrerequisites&quot;
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.personal.testcases.OpenAccountTest#openAccountMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method OpenAccountTest.openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@3c7f66c4] depends on not successfully finished methods in group &quot;openAccountMethodPrerequisites&quot;
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

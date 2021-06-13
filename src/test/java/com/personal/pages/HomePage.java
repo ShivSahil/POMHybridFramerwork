@@ -14,14 +14,14 @@ public class HomePage extends Page {
 
 	public CustomerPage enterCustomerLoginPage() {   // different classes are given to establish fluid syntax
 		
-		click(customerLoginbtnLocator, "customerLoginbtnLocator");
+		click(customerLoginbtnLocator, "customerLoginbtnLocator",5, "elementToBeClickable");
 		return new CustomerPage();
 	}
 	
 	public BankManagerPage enterBankManagerLoginPage() {
 		
 		
-		click(bankManagerLoginbtnLocator, "bankManagerLoginbtnLocator", 5, "visibilityOfElementLocated");
+		click(bankManagerLoginbtnLocator, "bankManagerLoginbtnLocator", 5, "elementToBeClickable");
 		return new BankManagerPage();
 	}
 

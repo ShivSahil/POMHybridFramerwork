@@ -17,7 +17,7 @@ public class Page extends BaseClass{
 	
 	
 	
-	private WebElement homebtn;
+
 	private By homebtnLocator = By.xpath("//button[@class='btn home']");
 	
 	
@@ -25,8 +25,7 @@ public class Page extends BaseClass{
 
 	
 		public HomePage goToHomePage() {
-			homebtn= driver.findElement(homebtnLocator);
-			homebtn.click();		
+			click(homebtnLocator, "homebtnLocator");	
 			return new HomePage();
 		}
 	
