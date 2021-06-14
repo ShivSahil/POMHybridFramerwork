@@ -28,7 +28,6 @@ public class BankManagerPage extends Page{
 		setLastName(lastName);
 		setPincode(pincode);
 		clickAddCustomerBtn();
-		
 		alert("accept", 4); 
 		return new BankManagerPage();
 	}

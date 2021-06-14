@@ -9,16 +9,33 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Customer Suite</th></tr>
-<tr><td><a href="#t0">Test run 1</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,070</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test run 1</a></td><td class="num">1</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">40,988</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Customer Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test run 1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.personal.testcases.AddCustomerTest</td><td><a href="#m0">addMultipleCustomerTest</a></td><td rowspan="3">1623660927572</td><td rowspan="3">316</td></tr><tr class="passedeven"><td><a href="#m1">addMultipleCustomerTest</a></td></tr><tr class="passedeven"><td><a href="#m2">addMultipleCustomerTest</a></td></tr><tr class="passedeven"><td><a href="#m3">loginAsmanagerTest</a></td><td rowspan="1">1623660925611</td><td rowspan="1">359</td></tr><tr class="passedodd"><td rowspan="1">com.personal.testcases.CustomerLoginTest</td><td><a href="#m4">customerLoginMethod</a></td><td rowspan="1">1623660930308</td><td rowspan="1">1456</td></tr><tr class="passedeven"><td rowspan="2">com.personal.testcases.OpenAccountTest</td><td><a href="#m5">openAccountMethod</a></td><td rowspan="2">1623660929005</td><td rowspan="2">1287</td></tr><tr class="passedeven"><td><a href="#m6">openAccountMethod</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Customer Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test run 1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.personal.testcases.AddCustomerTest</td><td><a href="#m0">addMultipleCustomerTest</a></td><td rowspan="1">1623661350529</td><td rowspan="1">32846</td></tr><tr><th colspan="4">Test run 1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.personal.testcases.CustomerLoginTest</td><td><a href="#m1">customerLoginMethod</a></td><td rowspan="1">1623661383486</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">com.personal.testcases.OpenAccountTest</td><td><a href="#m2">openAccountMethod</a></td><td rowspan="1">1623661383456</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test run 1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.personal.testcases.AddCustomerTest</td><td><a href="#m3">loginAsmanagerTest</a></td><td rowspan="1">1623661348426</td><td rowspan="1">1769</td></tr></tbody>
 </table>
-<h2>Test run 1</h2><h3 id="m0">com.personal.testcases.AddCustomerTest#addMultipleCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>No</td><td>Cust</td><td>1332</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.personal.testcases.AddCustomerTest#addMultipleCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Sahil</td><td>Guleri</td><td>3967</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.personal.testcases.AddCustomerTest#addMultipleCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Shiv</td><td>Sahil</td><td>160014</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test run 1</h2><h3 id="m0">com.personal.testcases.AddCustomerTest#addMultipleCustomerTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :6: 
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-IC0JENF&apos;, ip: &apos;172.16.18.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2264, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c763818c-5e53-4c69-a51f-29adbddfcc4f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at com.personal.utilities.ScreenshotUtility.screenshot(ScreenshotUtility.java:24)
+	at com.personal.listeners.ItestLis.onTestFailure(ItestLis.java:110)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.personal.testcases.CustomerLoginTest#customerLoginMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method CustomerLoginTest.customerLoginMethod()[pri:0, instance:com.personal.testcases.CustomerLoginTest@267f474e] depends on not successfully finished methods in group &quot;CustomerLoginMethodPrerequisites&quot;
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.personal.testcases.OpenAccountTest#openAccountMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method OpenAccountTest.openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@5bf22f18] depends on not successfully finished methods in group &quot;openAccountMethodPrerequisites&quot;
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">com.personal.testcases.AddCustomerTest#loginAsmanagerTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.personal.testcases.CustomerLoginTest#customerLoginMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.personal.testcases.OpenAccountTest#openAccountMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Shiv Sahil</td><td>Rupee</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.personal.testcases.OpenAccountTest#openAccountMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Sahil Guleri</td><td>Pound</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

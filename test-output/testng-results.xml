@@ -1,132 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="13" passed="7">
+<testng-results skipped="2" failed="1" ignored="6" total="10" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Customer Suite" duration-ms="12070" started-at="2021-06-14T14:25:20 IST" finished-at="2021-06-14T14:25:32 IST">
+  <suite name="Customer Suite" duration-ms="40988" started-at="2021-06-14T14:32:23 IST" finished-at="2021-06-14T14:33:04 IST">
     <groups>
       <group name="CustomerLoginMethodPrerequisites">
-        <method signature="OpenAccountTest.openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@3c7f66c4]" name="openAccountMethod" class="com.personal.testcases.OpenAccountTest"/>
+        <method signature="OpenAccountTest.openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@5bf22f18]" name="openAccountMethod" class="com.personal.testcases.OpenAccountTest"/>
       </group> <!-- CustomerLoginMethodPrerequisites -->
       <group name="openAccountMethodPrerequisites">
-        <method signature="AddCustomerTest.addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@3a44431a]" name="addMultipleCustomerTest" class="com.personal.testcases.AddCustomerTest"/>
+        <method signature="AddCustomerTest.addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@acb0951]" name="addMultipleCustomerTest" class="com.personal.testcases.AddCustomerTest"/>
       </group> <!-- openAccountMethodPrerequisites -->
     </groups>
-    <test name="Test run 1" duration-ms="12070" started-at="2021-06-14T14:25:20 IST" finished-at="2021-06-14T14:25:32 IST">
+    <test name="Test run 1" duration-ms="40988" started-at="2021-06-14T14:32:23 IST" finished-at="2021-06-14T14:33:04 IST">
       <class name="com.personal.testcases.OpenAccountTest">
-        <test-method name="openAccountMethod" signature="openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@3c7f66c4]" depends-on-groups="openAccountMethodPrerequisites" status="PASS" duration-ms="1071" finished-at="2021-06-14T14:25:28 IST" started-at="2021-06-14T14:25:27 IST" data-provider="excelData" description="BANK MANAGER LOGIN &gt; OPEN CUSTOMER TAB - opening multiple customers account">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sahil Guleri]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Pound]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAccountMethod -->
-        <test-method name="openAccountMethod" signature="openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@3c7f66c4]" depends-on-groups="openAccountMethodPrerequisites" status="PASS" duration-ms="1287" finished-at="2021-06-14T14:25:30 IST" started-at="2021-06-14T14:25:29 IST" data-provider="excelData" description="BANK MANAGER LOGIN &gt; OPEN CUSTOMER TAB - opening multiple customers account">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Shiv Sahil]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Rupee]]>
-              </value>
-            </param>
-          </params>
+        <test-method name="openAccountMethod" signature="openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@5bf22f18]" depends-on-groups="openAccountMethodPrerequisites" status="SKIP" duration-ms="0" finished-at="2021-06-14T14:33:03 IST" started-at="2021-06-14T14:33:03 IST" data-provider="excelData" description="BANK MANAGER LOGIN &gt; OPEN CUSTOMER TAB - opening multiple customers account">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method OpenAccountTest.openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@5bf22f18] depends on not successfully finished methods in group "openAccountMethodPrerequisites"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method OpenAccountTest.openAccountMethod(java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.OpenAccountTest@5bf22f18] depends on not successfully finished methods in group "openAccountMethodPrerequisites"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAccountMethod -->
       </class> <!-- com.personal.testcases.OpenAccountTest -->
       <class name="com.personal.base.BaseClass">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.personal.base.BaseClass@2ea41516]" name="setUp" is-config="true" duration-ms="5084" started-at="2021-06-14T14:25:20 IST" finished-at="2021-06-14T14:25:25 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.personal.base.BaseClass@297ea53a]" name="setUp" is-config="true" duration-ms="5072" started-at="2021-06-14T14:32:23 IST" finished-at="2021-06-14T14:32:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.personal.base.BaseClass@2ea41516]" name="tearDown" is-config="true" duration-ms="781" started-at="2021-06-14T14:25:31 IST" finished-at="2021-06-14T14:25:32 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.personal.base.BaseClass@297ea53a]" name="tearDown" is-config="true" duration-ms="792" started-at="2021-06-14T14:33:03 IST" finished-at="2021-06-14T14:33:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.personal.base.BaseClass -->
       <class name="com.personal.testcases.CustomerLoginTest">
-        <test-method status="PASS" signature="customerLoginMethod()[pri:0, instance:com.personal.testcases.CustomerLoginTest@194bcebf]" name="customerLoginMethod" duration-ms="1456" depends-on-groups="CustomerLoginMethodPrerequisites" started-at="2021-06-14T14:25:30 IST" description="CUSTOMER LOGIN - login as customer" finished-at="2021-06-14T14:25:31 IST">
+        <test-method status="SKIP" signature="customerLoginMethod()[pri:0, instance:com.personal.testcases.CustomerLoginTest@267f474e]" name="customerLoginMethod" duration-ms="0" depends-on-groups="CustomerLoginMethodPrerequisites" started-at="2021-06-14T14:33:03 IST" description="CUSTOMER LOGIN - login as customer" finished-at="2021-06-14T14:33:03 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CustomerLoginTest.customerLoginMethod()[pri:0, instance:com.personal.testcases.CustomerLoginTest@267f474e] depends on not successfully finished methods in group "CustomerLoginMethodPrerequisites"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CustomerLoginTest.customerLoginMethod()[pri:0, instance:com.personal.testcases.CustomerLoginTest@267f474e] depends on not successfully finished methods in group "CustomerLoginMethodPrerequisites"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customerLoginMethod -->
       </class> <!-- com.personal.testcases.CustomerLoginTest -->
       <class name="com.personal.testcases.AddCustomerTest">
-        <test-method status="PASS" signature="loginAsmanagerTest()[pri:0, instance:com.personal.testcases.AddCustomerTest@3a44431a]" name="loginAsmanagerTest" duration-ms="359" started-at="2021-06-14T14:25:25 IST" description="BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen" finished-at="2021-06-14T14:25:25 IST">
+        <test-method status="PASS" signature="loginAsmanagerTest()[pri:0, instance:com.personal.testcases.AddCustomerTest@acb0951]" name="loginAsmanagerTest" duration-ms="1769" started-at="2021-06-14T14:32:28 IST" description="BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen" finished-at="2021-06-14T14:32:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsmanagerTest -->
-        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@3a44431a]" status="PASS" duration-ms="408" finished-at="2021-06-14T14:25:27 IST" started-at="2021-06-14T14:25:26 IST" depends-on-methods="com.personal.testcases.AddCustomerTest.loginAsmanagerTest" data-provider="excelData" description="BANK MANAGER LOGIN &gt; ADD CUSTOMER TAB - adding multiple customers">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Shiv]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sahil]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[160014]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addMultipleCustomerTest -->
-        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@3a44431a]" status="PASS" duration-ms="308" finished-at="2021-06-14T14:25:27 IST" started-at="2021-06-14T14:25:27 IST" depends-on-methods="com.personal.testcases.AddCustomerTest.loginAsmanagerTest" data-provider="excelData" description="BANK MANAGER LOGIN &gt; ADD CUSTOMER TAB - adding multiple customers">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sahil]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Guleri]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[3967]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addMultipleCustomerTest -->
-        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@3a44431a]" status="PASS" duration-ms="316" finished-at="2021-06-14T14:25:27 IST" started-at="2021-06-14T14:25:27 IST" depends-on-methods="com.personal.testcases.AddCustomerTest.loginAsmanagerTest" data-provider="excelData" description="BANK MANAGER LOGIN &gt; ADD CUSTOMER TAB - adding multiple customers">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Cust]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1332]]>
-              </value>
-            </param>
-          </params>
+        <test-method name="addMultipleCustomerTest" signature="addMultipleCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.personal.testcases.AddCustomerTest@acb0951]" status="FAIL" duration-ms="32846" finished-at="2021-06-14T14:33:03 IST" started-at="2021-06-14T14:32:30 IST" depends-on-methods="com.personal.testcases.AddCustomerTest.loginAsmanagerTest" data-provider="excelData" description="BANK MANAGER LOGIN &gt; ADD CUSTOMER TAB - adding multiple customers">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[Dismissed user prompt dialog: Customer added successfully with customer id :6: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2264, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c763818c-5e53-4c69-a51f-29adbddfcc4f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Customer added successfully with customer id :6: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2264, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c763818c-5e53-4c69-a51f-29adbddfcc4f
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at com.personal.utilities.ScreenshotUtility.screenshot(ScreenshotUtility.java:24)
+at com.personal.listeners.ItestLis.onTestFailure(ItestLis.java:110)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:66)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:651)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMultipleCustomerTest -->
