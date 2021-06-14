@@ -31,7 +31,7 @@ class subClass extends BaseClass{ // keep it default
 			
 					if (action.contains("staticDropDown"))  // in case of static drop down we need to check the presence of option in drop down too
 					{
-						checkDropDown(byEle, locatorName, data);
+						checkDropDown(byEle, locatorName, data, null);
 					}
 			
 			
@@ -262,10 +262,10 @@ class subClass extends BaseClass{ // keep it default
 		else if(action.equals("staticDropDown") && exception.contains("NoSuchElementException"))
 		{
 
-			logger.error("option(" +data+ ") is NOT selected on dropdown("+locatorName+")  [ "+byEle+" ]. Either dropdown("+locatorName+") is NOT present on page."
+			logger.error("option(" +data+ ") is NOT selected on dropdown("+locatorName+")  [ "+byEle+" ]. dropdown("+locatorName+") is NOT present on page."
 					+ "\n \n Error msg is :-   "+ exception);
 			
-			Assert.fail("option(" +data+ ") is NOT selected on dropdown("+locatorName+") [ "+byEle+" ]. Either dropdown("+locatorName+") is NOT present on page."
+			Assert.fail("option(" +data+ ") is NOT selected on dropdown("+locatorName+") [ "+byEle+" ]. dropdown("+locatorName+") is NOT present on page."
 					+ "\n \n Error msg is :-   "+ exception);
 		
 		}
@@ -285,26 +285,43 @@ class subClass extends BaseClass{ // keep it default
 	
 	
 	 
-	void checkDropDown(By byEle, String locatorName, String selectOption) {
+	boolean checkDropDown(By byEle, String locatorName, String selectOption, String assertType) {
 		
 		
-		
+
 		 Select s = new Select(driver.findElement(byEle));
 		List<WebElement> op  = s.getOptions();
+		
 		List<String> newList = new ArrayList<String>();
 		
 		 for(int i =0; i<op.size() ; i++){
 			 newList.add(op.get(i).getText());
 	      }
+	
 		
 		 
-		
-		if( ! (newList.contains(selectOption)))
+		 if( ! (newList.contains(selectOption)) &&  (assertType==null))
 				{
 					
 			logger.error("option(" +selectOption+ ") is NOT selected on dropdown("+locatorName+"). Option(" +selectOption+ ") is NOT present in dropdown.");
 			Assert.fail("option(" +selectOption+ ") is NOT selected on dropdown("+locatorName+"). Option(" +selectOption+ ") is NOT present in dropdown.");
 				}
+		
+		else if( (! (newList.contains(selectOption))) && ( assertType.toLowerCase().contains("hardassert")))
+		{
+			
+	logger.error("ASSERT :- option(" +selectOption+ ") is NOT selected on dropdown("+locatorName+"). Option(" +selectOption+ ") is NOT present in dropdown.");
+	Assert.fail("ASSERT :- option(" +selectOption+ ") is NOT selected on dropdown("+locatorName+"). Option(" +selectOption+ ") is NOT present in dropdown.");
+		}
+		else if( (! (newList.contains(selectOption))) && ( assertType.toLowerCase().contains("softassert")))
+		{
+			
+	logger.error("VERIFY :- option(" +selectOption+ ") is NOT selected on dropdown("+locatorName+"). Option(" +selectOption+ ") is NOT present in dropdown.");
+ test.log(Status.ERROR,"VERIFY :- option(" +selectOption+ ") is NOT selected on dropdown("+locatorName+"). Option(" +selectOption+ ") is NOT present in dropdown.");
+		return true;
+		}
+		
+		return false;
 		
 	}
 	
@@ -383,7 +400,71 @@ class subClass extends BaseClass{ // keep it default
 		return null;
 
 	}
+
+
+
+	void assertion(String elementType, By byEle, String locatorName, String data, String assertType) {
+	
 		
+		
+		if (elementType==null)
+		{
+			
+			
+			
+			 try{driver.findElement(byEle);
+			 
+			 
+			 if(assertType.toLowerCase().contains("hardassert"))
+				{
+			 logger.debug("ASSERT:-locator("+locatorName+") is present on the Page");
+			 test.log(Status.INFO, "ASSERT:- VERIFY:-locator("+locatorName+") is present on the Page");
+			 }
+			 else
+				{
+				 
+				 logger.debug("VERIFY:- option(" +data+ ") is present in the dropdown ("+locatorName+")");
+				test.log(Status.INFO, "VERIFY:- option(" +data+ ") is present in the dropdown ("+locatorName+")");
+				}
+			 }
+			 catch (Exception e)
+			 {
+				 if(assertType.toLowerCase().contains("hardassert"))
+					{
+				 logger.error("ASSERT:- locator("+locatorName+") is NOT present on the Page");
+				 Assert.fail( "ASSERT:- locator("+locatorName+") is NOT present on the Page");
+				 }
+				 else
+					{
+					 
+					 logger.error("VERIFY:- locator("+locatorName+") is NOT present on the Page");
+					test.log(Status.ERROR,"VERIFY:- locator("+locatorName+") is NOT present on the Page");
+					}
+			 }
+			 
+		}
+		
+		else if(elementType.toLowerCase().contains("staticdropdown") )
+			{
+				
+				boolean b=checkDropDown(byEle, locatorName, data, assertType);
+				
+				if(assertType.toLowerCase().contains("hardassert"))
+				{
+					logger.debug("ASSERT:- option(" +data+ ") is present in the dropdown ("+locatorName+")");
+					test.log(Status.INFO, "ASSERT:- option(" +data+ ") is present in the dropdown ("+locatorName+")");
+				}
+				else if(b==false)
+				{
+					logger.debug("VERIFY:- option(" +data+ ") is present in the dropdown ("+locatorName+")");
+					 test.log(Status.INFO, "VERIFY:- option(" +data+ ") is present in the dropdown ("+locatorName+")");
+				}
+			}
+		
+	}
+
+
+
 		
 		
 	

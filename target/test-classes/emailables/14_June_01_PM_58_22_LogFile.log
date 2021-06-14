@@ -1,0 +1,10 @@
+2021-Jun-14 13:58:27 PM [main] INFO  com.personal.base.BaseClass - FIREFOX browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+2021-Jun-14 13:58:27 PM [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+2021-Jun-14 13:58:27 PM [main] DEBUG com.personal.base.BaseClass - window maximized
+2021-Jun-14 13:58:27 PM [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(bankManagerLoginbtnLocator) set to 5 seconds. locator(bankManagerLoginbtnLocator) clicked successfully
+2021-Jun-14 13:58:28 PM [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+2021-Jun-14 13:58:28 PM [main] DEBUG com.personal.base.BaseClass -  
+ 
+ ------------------------------------------------------------------------------------------------- 
+ 
+

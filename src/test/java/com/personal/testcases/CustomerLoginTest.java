@@ -21,6 +21,9 @@ public class CustomerLoginTest extends BaseClass {
 		.loginAsCustomer("No Cust")
 		.logoutAsCustomer();
 
+		
+		// HELP WITH ASSERTIONS
+		
 	}
 	
 	

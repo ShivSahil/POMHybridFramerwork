@@ -11,13 +11,13 @@ public class BankManagerPage extends Page{
  
 	private By addCustomerTabLocator = By.xpath("//button[@ng-click='addCust()']");
 	private By firstNameLocator = By.cssSelector("input[placeholder='First Name']");
-	private By lastNameLocator= By.cssSelector("input[placeholder='Last Name']111111");
+	private By lastNameLocator= By.cssSelector("input[placeholder='Last Name']");
 	private By pincodeLocator = By.cssSelector("input[placeholder='Post Code']");
 	private By addCustomerBtnLocator = By.xpath("//button[@type='submit']");
 	
  public BankManagerPage enterAddCustomersTab() {
 		
-		click(addCustomerTabLocator, "AddCustomerTabLocator");
+		click(addCustomerTabLocator, "AddCustomerTabLocator", 4, "elementToBeClickable");
 		return new BankManagerPage();           // WHY I AM UNABLE TO USE THIS
 		
 	}
@@ -35,7 +35,7 @@ public class BankManagerPage extends Page{
 	
 	private BankManagerPage setFirstName(String firstName)    
 	{
-		type(firstNameLocator,firstName,"firstNameLocator",4, "elementToBeClickable" );
+		type(firstNameLocator,firstName,"firstNameLocator",4, "elementToBeClickable");
 		return new BankManagerPage();
 		
 	}
@@ -75,7 +75,7 @@ public class BankManagerPage extends Page{
 	
 	public HomePage openAccount(String name, String currency) {   // after this we are going to home page
 		openAccountTab();
-		setName(name);
+		setName(name);		
 		setcurrency(currency);
 		clickSubmitBtn();
 		alert("accept");

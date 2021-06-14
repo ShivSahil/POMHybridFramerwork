@@ -1,5 +1,6 @@
 package com.personal.testcases;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import com.personal.base.BaseClass;
 import com.personal.pages.BankManagerPage;
@@ -16,7 +17,8 @@ public class OpenAccountTest extends BaseClass{
 		
 		BankManagerPage bankManagerPage= new BankManagerPage();
 		bankManagerPage.openAccount(name, currency);
-
+		isElementPresent("staticdropdown",  By.id("userSelect"), "customerDropDownLocator", name, "softassert");
+		
 	}
 	
 	

@@ -1,5 +1,6 @@
 package com.personal.testcases;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import com.personal.base.BaseClass;
@@ -21,9 +22,9 @@ public class AddCustomerTest extends BaseClass {
 		homePage.enterBankManagerLoginPage()
 		.enterAddCustomersTab();           // this is called FLUID SYNTAX
 
-		checkPageTitle("Protractor practice website - Banking App","softAssert");
+		checkPageTitle("Protractor practice website - Banking App","hardAssert");
 		
-		
+	
 
 	}
 	

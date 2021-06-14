@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 
 public class HomePage extends Page {
 
+	
 
 	private By customerLoginbtnLocator = By.cssSelector("div > div:first-child > button.btn.btn-primary.btn-lg");
 	private By bankManagerLoginbtnLocator= By.cssSelector("div > div:last-child > button.btn.btn-primary.btn-lg");

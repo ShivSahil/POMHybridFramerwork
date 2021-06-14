@@ -356,14 +356,13 @@ public void checkPageTitle(String expectedtitle, String assertType)  //REUSEABLE
 	
 }
 
-public void isElementPresent() { // REUSEABLE ELEMENT AVAILABILITY METHOD
+public void isElementPresent(String elementType, By byEle, String locatorName, String data, String assertType) { // REUSEABLE ELEMENT AVAILABILITY METHOD
 	
-	// ??????????????
+	subClass sub= new subClass();
+	sub.assertion(elementType,byEle, locatorName, data, assertType);
 	
 			
 	}
-	 
-	
 
 public void doesAlertContainsText(String message, String assertType) { // REUSEABLE ALERT TEXT AVAILABILITY METHOD
 	

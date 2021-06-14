@@ -1,0 +1,64 @@
+2021-Jun-14 12:22:36 PM [main] INFO  com.personal.base.BaseClass - FIREFOX browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+2021-Jun-14 12:22:36 PM [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+2021-Jun-14 12:22:36 PM [main] DEBUG com.personal.base.BaseClass - window maximized
+2021-Jun-14 12:22:36 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF loginAsmanagerTest HAS BEGUN >> 
+2021-Jun-14 12:22:36 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+2021-Jun-14 12:22:37 PM [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(bankManagerLoginbtnLocator) set to 5 seconds. locator(bankManagerLoginbtnLocator) clicked successfully
+2021-Jun-14 12:22:37 PM [main] DEBUG com.personal.base.BaseClass - locator(AddCustomerTabLocator) clicked successfully
+2021-Jun-14 12:22:37 PM [main] INFO  com.personal.base.BaseClass - ASSERT :- 'Protractor practice website - Banking App' is correct title
+2021-Jun-14 12:22:37 PM [main] INFO  com.personal.base.BaseClass - loginAsmanagerTest HAS PASSED
+2021-Jun-14 12:22:38 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-14 12:22:38 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-14 12:22:42 PM [main] ERROR com.personal.base.BaseClass - locator(firstNameLocator) [By.cssSelector: input[placeholder='First Name']qqqqqqq] can't be filled with data(Shiv) as locator is either NOT present on page or (4 second) waitperiod of conditon(elementToBeClickable) timed out 
+ 
+ Error msg is :-   Expected condition failed: waiting for element to be clickable: By.cssSelector: input[placeholder='First Name']qqqqqqq (tried for 4 second(s) with 500 milliseconds interval)
+2021-Jun-14 12:22:42 PM [main] ERROR com.personal.base.BaseClass - addMultipleCustomerTest HAS FAILED 
+2021-Jun-14 12:22:43 PM [main] DEBUG com.personal.base.BaseClass - Screenshot(14_June_12_PM_22_42_788ADDMULTIPLECUSTOMERTEST.png) of addMultipleCustomerTest method taken successfully
+2021-Jun-14 12:22:43 PM [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+2021-Jun-14 12:22:43 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-14 12:22:43 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-14 12:22:47 PM [main] ERROR com.personal.base.BaseClass - locator(firstNameLocator) [By.cssSelector: input[placeholder='First Name']qqqqqqq] can't be filled with data(Sahil) as locator is either NOT present on page or (4 second) waitperiod of conditon(elementToBeClickable) timed out 
+ 
+ Error msg is :-   Expected condition failed: waiting for element to be clickable: By.cssSelector: input[placeholder='First Name']qqqqqqq (tried for 4 second(s) with 500 milliseconds interval)
+2021-Jun-14 12:22:47 PM [main] ERROR com.personal.base.BaseClass - addMultipleCustomerTest HAS FAILED 
+2021-Jun-14 12:22:47 PM [main] DEBUG com.personal.base.BaseClass - Screenshot(14_June_12_PM_22_47_681ADDMULTIPLECUSTOMERTEST.png) of addMultipleCustomerTest method taken successfully
+2021-Jun-14 12:22:47 PM [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+2021-Jun-14 12:22:47 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-14 12:22:47 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-14 12:22:52 PM [main] ERROR com.personal.base.BaseClass - locator(firstNameLocator) [By.cssSelector: input[placeholder='First Name']qqqqqqq] can't be filled with data(No) as locator is either NOT present on page or (4 second) waitperiod of conditon(elementToBeClickable) timed out 
+ 
+ Error msg is :-   Expected condition failed: waiting for element to be clickable: By.cssSelector: input[placeholder='First Name']qqqqqqq (tried for 4 second(s) with 500 milliseconds interval)
+2021-Jun-14 12:22:52 PM [main] ERROR com.personal.base.BaseClass - addMultipleCustomerTest HAS FAILED 
+2021-Jun-14 12:22:52 PM [main] DEBUG com.personal.base.BaseClass - Screenshot(14_June_12_PM_22_52_083ADDMULTIPLECUSTOMERTEST.png) of addMultipleCustomerTest method taken successfully
+2021-Jun-14 12:22:52 PM [main] DEBUG com.personal.base.BaseClass - Screenshot of addMultipleCustomerTest method successfully attached to report 
+2021-Jun-14 12:22:52 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+2021-Jun-14 12:22:52 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+2021-Jun-14 12:22:52 PM [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[openAccountMethodPrerequisites]' HAS FAILED
+2021-Jun-14 12:22:52 PM [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[openAccountMethodPrerequisites]' HAS FAILED
+2021-Jun-14 12:22:52 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF customerLoginMethod HAS BEGUN >> 
+2021-Jun-14 12:22:52 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
+2021-Jun-14 12:22:52 PM [main] ERROR com.personal.base.BaseClass - customerLoginMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[CustomerLoginMethodPrerequisites]' HAS FAILED
+2021-Jun-14 12:22:52 PM [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+2021-Jun-14 12:22:52 PM [main] DEBUG com.personal.base.BaseClass -  
+ 
+ ------------------------------------------------------------------------------------------------- 
+ 
+

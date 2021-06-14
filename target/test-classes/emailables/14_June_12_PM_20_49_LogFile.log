@@ -1,0 +1,46 @@
+2021-Jun-14 12:20:54 PM [main] INFO  com.personal.base.BaseClass - FIREFOX browser opened 'http://www.way2automation.com/angularjs-protractor/banking/#/login' website successfully
+2021-Jun-14 12:20:54 PM [main] DEBUG com.personal.base.BaseClass - Implicit wait set to - 4seconds   &  pageload timeout set to - 8seconds
+2021-Jun-14 12:20:54 PM [main] DEBUG com.personal.base.BaseClass - window maximized
+2021-Jun-14 12:20:54 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF loginAsmanagerTest HAS BEGUN >> 
+2021-Jun-14 12:20:54 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN - login as bank manager and checking availability of ADD CUSTOMER TAB on screen
+2021-Jun-14 12:20:54 PM [main] DEBUG com.personal.base.BaseClass - elementToBeClickable timeout for locator(bankManagerLoginbtnLocator) set to 5 seconds. locator(bankManagerLoginbtnLocator) clicked successfully
+2021-Jun-14 12:20:55 PM [main] ERROR com.personal.base.BaseClass - locator(AddCustomerTabLocator)  [ By.xpath: //button[@ng-click='addCust()']111111111 ] can't be clicked as it's NOT present on page.
+ 
+ Error msg is :-   org.openqa.selenium.InvalidSelectorException: Given xpath expression "//button[@ng-click='addCust()']111111111" is invalid: SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-IC0JENF', ip: '172.16.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 12172, moz:profile: C:\Users\Nishant Guleri\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4a9b36ec-404a-4921-ae27-48e26089fec9
+*** Element info: {Using=xpath, value=//button[@ng-click='addCust()']111111111}
+2021-Jun-14 12:20:55 PM [main] ERROR com.personal.base.BaseClass - loginAsmanagerTest HAS FAILED 
+2021-Jun-14 12:20:55 PM [main] DEBUG com.personal.base.BaseClass - Screenshot(14_June_12_PM_20_55_034LOGINASMANAGERTEST.png) of loginAsmanagerTest method taken successfully
+2021-Jun-14 12:20:55 PM [main] DEBUG com.personal.base.BaseClass - Screenshot of loginAsmanagerTest method successfully attached to report 
+2021-Jun-14 12:20:55 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF addMultipleCustomerTest HAS BEGUN >> 
+2021-Jun-14 12:20:55 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > ADD CUSTOMER TAB - adding multiple customers
+2021-Jun-14 12:20:55 PM [main] ERROR com.personal.base.BaseClass - addMultipleCustomerTest HAS SKIPPED BECAUSE IT'S DEPENDENCY '[com.personal.testcases.AddCustomerTest.loginAsmanagerTest]' HAS FAILED
+2021-Jun-14 12:20:55 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF openAccountMethod HAS BEGUN >> 
+2021-Jun-14 12:20:55 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- BANK MANAGER LOGIN > OPEN CUSTOMER TAB - opening multiple customers account
+2021-Jun-14 12:20:55 PM [main] ERROR com.personal.base.BaseClass - openAccountMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[openAccountMethodPrerequisites]' HAS FAILED
+2021-Jun-14 12:20:55 PM [main] INFO  com.personal.base.BaseClass -  
+ 
+ 
+ << EXECUTION OF customerLoginMethod HAS BEGUN >> 
+2021-Jun-14 12:20:55 PM [main] INFO  com.personal.base.BaseClass - description of testcase:- CUSTOMER LOGIN - login as customer
+2021-Jun-14 12:20:55 PM [main] ERROR com.personal.base.BaseClass - customerLoginMethod HAS SKIPPED BECAUSE IT'S DEPENDENCY '[CustomerLoginMethodPrerequisites]' HAS FAILED
+2021-Jun-14 12:20:56 PM [main] INFO  com.personal.base.BaseClass - FIREFOX BROWSER CLOSED
+2021-Jun-14 12:20:56 PM [main] DEBUG com.personal.base.BaseClass -  
+ 
+ ------------------------------------------------------------------------------------------------- 
+ 
+
